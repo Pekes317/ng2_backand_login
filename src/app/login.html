@@ -1,0 +1,24 @@
+<header>
+  <h1>
+    Login
+  </h1>
+</header>
+
+<main>
+  <form [ngFormModel]="loginForm" (ngSubmit)="signIn(loginForm)">
+	  <div>
+		Username:
+		<input ngControl="username" id="username" type="text" />
+	  </div>
+	  <div>
+		Password:
+		<input ngControl="password" id="password" type="password" />
+	  </div>
+	<div>
+	  <button [disabled]="!loginForm.valid" type="submit">Sign In</button>
+	</div>
+	<div>
+	  <button (click)="openPage(signUp)" type="button">or Create an Account</button>
+	</div>
+  </form>
+</main>
