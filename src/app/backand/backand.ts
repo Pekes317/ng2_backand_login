@@ -6,7 +6,7 @@ import 'rxjs/Rx';
 export class Backand {
   auth_token:{ header_name : string, header_value: string} = {header_name: '', header_value: ''};
   api_url:string = "https://api.backand.com";
-  app_name:string = "ebc2";
+  app_name:string = "YourAppName";
   auth_type:string = "N/A";
   auth_status:string = "";
   is_auth_error:boolean = false;
